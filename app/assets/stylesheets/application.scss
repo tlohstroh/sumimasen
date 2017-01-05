@@ -1,2 +1,38 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus{
+    color: #FC5253;
+    background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+    background-color: transparent;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    // color: #555;
+    // background-color: #e7e7e7;
+    color: #FC5253;
+    background-color: #ffffff;
+}
+
+.navbar {
+    letter-spacing: .15em;
+    text-transform: uppercase;
+    font-family: 'Interstate',sans-serif;
+    margin-bottom: 0px;
+}
+
+
+.banner{
+  background-color: green;
+  width: auto;
+  height: 500px;
+}
