@@ -5,6 +5,10 @@ class ArticlesController < ApplicationController
     @articles = Article.all
   end
 
+  def edit
+    @article = Article.find(params[:id])
+  end
+
   def show
     @article = Article.find(params[:id])
   end
@@ -17,8 +21,8 @@ class ArticlesController < ApplicationController
     @article = Article.new( article_params )
 
     if @article.save
-      render @article
-    else 
+      redirect_to @article
+    else
       render 'new'
     end
 
