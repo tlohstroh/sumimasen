@@ -1,12 +1,15 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+$primary-color: #57C7A2;
+
+
 
 // * * * NAVBAR * * * //
 
 // links color nav
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand{
-  color: white;
+  color: $primary-color;
 }
 
 // links color nav fixed-bar
@@ -27,7 +30,7 @@
 // styling navbar
 .navbar, .navbar-default {
   color: black;
-  font-size: 16px;
+  font-size: 17px;
   letter-spacing: .15em;
   text-transform: uppercase;
   font-family: 'Interstate',sans-serif;
@@ -47,7 +50,7 @@
   z-index: 50;
 }
 
-.xxx{
+.wrapper{
   width: 100%;
   position: absolute;
   bottom: 0;
