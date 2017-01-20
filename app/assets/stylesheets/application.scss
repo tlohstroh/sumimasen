@@ -35,7 +35,8 @@ $primary-color: #57C7A2;
   text-transform: uppercase;
   font-family: 'Interstate',sans-serif;
   margin-bottom: 0px;
-  background: rgba(0,0,0,.4);
+  background: rgba(0,0,0,.0);
+  // background: rgba(0,0,0,.4);
   border-color: transparent;
   border-radius: 0px;
 }
@@ -57,6 +58,23 @@ $primary-color: #57C7A2;
   left: 0;
 }
 
+.logo{
+  margin: auto;
+  width: 70%;
+  height: 90%;
+  background-color: grey;
+  background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484908037/Sumimasen-script-white_xlxedq.png') no-repeat center center;
+  background-size: 100%;
+  z-index: 100;
+}
+
+.dark-filter{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.2);
+}
+
+
 
 // * * * MAIN INTRO IMAGE * * * //
 
@@ -67,14 +85,16 @@ $primary-color: #57C7A2;
   background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484861589/josjebuiten-zwartwit_n8h7fi.jpg') no-repeat center right fixed;
   background-size: cover;
   margin: 0 auto;
-  background-color: grey;
+  background-color: green;
 }
+
+
 
 // * * * CONTENT * * * //
 
 .content{
   width: 100%;
   height: 1500px;
-  background-color: pink;
+  background-color: $primary-color;
 
 }
