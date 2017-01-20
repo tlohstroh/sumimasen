@@ -11,9 +11,14 @@
   <body>
     <%  if params[:controller] == 'welcome'%>
       <%= render 'shared/banner_home'%>
+      <%= yield %>
+
     <% else %>
       <%= render 'shared/navbar'%>
+      <div class="container">
+      <%= yield %>
+      <div>
     <% end %>
-    <%= yield %>
+
   </body>
 </html>

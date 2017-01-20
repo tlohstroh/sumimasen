@@ -1,9 +1,34 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-$primary-color: #57C7A2;
 $navbar-height: 80px;
-$hover-color: #FC5253;
+// $homepage-color: #90C5A9;
+// $homepage-color: #DDE0CD;
+// $homepage-color: #3BB0AA;
+$homepage-color: #5AC79E;
+// $homepage-color: #A1D6F5; heckblue
+
+// $primary-color: #57C7A2; // strong sea green
+// $hover-color: #FC5253; // heck house red
+
+$primary-color: #EBE3E0; // pink
+$hover-color: #FC5253; // heckred
+
+// $primary-color: #90C5A9; // light sea green
+// $hover-color: #9C6A8D; // purple
+
+// $primary-color: #EBE3E0; //pink
+// $hover-color: #EF6D3B; //oranje
+
+// $primary-color: #EBE3E0; // pink
+// $hover-color: #F9A636; // orange
+
+// $primary-color: #EBE3E0; // pink
+// $hover-color: #DDE0CD; // greenish
+
+// $primary-color: #EBE3E0; // pink
+// $hover-color: #53AC57; //  green
+
 
 
 
@@ -103,7 +128,7 @@ $hover-color: #FC5253;
 
 .main-intro{
   width: 100%;
-  height:100vh;
+  height:99.5vh;
   position: relative;
   background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484861589/josjebuiten-zwartwit_n8h7fi.jpg') no-repeat center right fixed;
   background-size: cover;
@@ -115,10 +140,20 @@ $hover-color: #FC5253;
 
 // * * * CONTENT * * * //
 
-.content{
+.content-home{
   width: 100%;
   height: 1500px;
-  background-color: $primary-color;
+  background-color: $homepage-color;
+}
+
+
+
+.container{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  min-height: 100vh;
   padding-top: $navbar-height;
+  background-color: $primary-color;
 
 }
