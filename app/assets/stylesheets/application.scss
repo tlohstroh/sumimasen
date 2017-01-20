@@ -5,16 +5,25 @@ $primary-color: #57C7A2;
 
 
 
+
 // * * * NAVBAR * * * //
+
+.navbar {
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
 
 // links color nav
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand{
-  color: $primary-color;
+  color: white;
+  padding-top: 30px;
 }
 
 // links color nav fixed-bar
 .fixed-bar .navbar-nav > li > a, .fixed-bar .navbar-brand{
   color: black;
+  padding-top: 30px;
 }
 
 // hover color nav
