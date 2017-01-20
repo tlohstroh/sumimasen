@@ -34,11 +34,21 @@ $hover-color: #FC5253;
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus
 {
-    color: #FC5253;
+    color: $hover-color;
     background-color: transparent;
 }
 
-// styling navbar
+// navbar active tab
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: $hover-color;
+  background-color: transparent;
+  // background-color: #e7e7e7;
+
+}
+
+// general styling navbar
 .navbar, .navbar-default {
   color: black;
   font-size: 17px;
@@ -69,16 +79,18 @@ $hover-color: #FC5253;
   left: 0;
 }
 
-.logo{
-  margin: auto;
-  width: 70%;
-  height: 90%;
-  background-color: grey;
-  background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484908037/Sumimasen-script-white_xlxedq.png') no-repeat center center;
-  background-size: 100%;
-  z-index: 100;
-}
+// optional logo
+// .logo{
+//   margin: auto;
+//   width: 70%;
+//   height: 90%;
+//   background-color: grey;
+//   background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484908037/Sumimasen-script-white_xlxedq.png') no-repeat center center;
+//   background-size: 100%;
+//   z-index: 100;
+// }
 
+// transparent layer, dark
 .dark-filter{
   width: 100%;
   height: 100%;
@@ -107,5 +119,6 @@ $hover-color: #FC5253;
   width: 100%;
   height: 1500px;
   background-color: $primary-color;
+  padding-top: $navbar-height;
 
 }
