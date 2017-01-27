@@ -22,6 +22,9 @@
           <li class="<%= 'active' if params[:controller] == 'articles' %>"><a <%= link_to 'MUSINGS', articles_path %></a></li>
           <li><a href="#">CODING</a></li>
           <li><a href="#">NOW</a></li>
+          <% if user_signed_in? %>
+          <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+          <% end %>
           <!-- <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
