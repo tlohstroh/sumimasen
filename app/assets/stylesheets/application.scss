@@ -5,14 +5,16 @@ $navbar-height: 80px;
 // $homepage-color: #90C5A9;
 // $homepage-color: #DDE0CD;
 // $homepage-color: #3BB0AA;
-$homepage-color: #5AC79E;
+// $homepage-color: #5AC79E;
 // $homepage-color: #A1D6F5; heckblue
+$homepage-color: #F3D500;
+// $homepage-color: white;
 
 // $primary-color: #57C7A2; // strong sea green
 // $hover-color: #FC5253; // heck house red
 
-$primary-color: #EBE3E0; // pink
-$hover-color: #FC5253; // heckred
+// $primary-color: #EBE3E0; // pink !
+// $hover-color: #FC5253; // heckred !
 
 // $primary-color: #90C5A9; // light sea green
 // $hover-color: #9C6A8D; // purple
@@ -28,6 +30,14 @@ $hover-color: #FC5253; // heckred
 
 // $primary-color: #EBE3E0; // pink
 // $hover-color: #53AC57; //  green
+
+// $primary-color: #F3D500; // oker
+// $hover-color: #FC5253; // heckred
+
+$primary-color: #EBE3E0; // pink
+$hover-color: #F3D500; // oker
+$primary-color: #EBE3E0; // pink
+$hover-color: #F3D500; // oker
 
 
 
@@ -150,10 +160,10 @@ $hover-color: #FC5253; // heckred
 
 .container{
   margin: 0px;
-  padding: 0px;
+  padding: 80px;
   width: 100%;
   min-height: 100vh;
-  padding-top: $navbar-height;
+  padding-top: $navbar-height + 80px;
   background-color: $primary-color;
 
 }
