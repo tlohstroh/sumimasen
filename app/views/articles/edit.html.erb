@@ -1,5 +1,11 @@
+<% if !user_signed_in? %>
+<p> sign in first!<p>
+<%= link_to '[Back]', articles_path %>
+<%else%>
+
 <h1>Edit article</h1>
 
 <%= render 'form' %>
 
 <%= link_to '[Back]', articles_path %>
+<%end%>

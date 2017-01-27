@@ -9,5 +9,7 @@
 </p>
 
 <%= link_to '[back to articles]', articles_path %>
-<%= link_to '[edit]', edit_article_path%>
-<%= link_to '[Delete]', article_path, methode: :delete, data: { confirm: 'Are you sure?' } %>
+<% if user_signed_in? %>
+  <%= link_to '[edit]', edit_article_path%>
+  <%= link_to '[Delete]', article_path, methode: :delete, data: { confirm: 'Are you sure?' } %>
+<% end %>
