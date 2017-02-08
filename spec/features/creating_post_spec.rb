@@ -6,6 +6,11 @@ require "rails_helper"
 # TODO make it work
 
 RSpec.feature "Creating Articles" do
+  before do
+    @tjitske = User.create(email: "tjitske@example.com", password: "password")
+    login_as(@tjitske)
+  end
+
   # (scenario = capybara)
   scenario "A user creates a new article" do
     # visit root page
