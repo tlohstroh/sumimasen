@@ -5,10 +5,13 @@ require "rails_helper"
 # test doesn't fully work yet because of authentication issues..
 # TODO make it work
 
+
+
 RSpec.feature "Creating Articles" do
+
   before do
-    @tjitske = User.create(email: "tjitske@example.com", password: "password")
-    login_as(@tjitske)
+    @john = User.create!(email: "me@example.com", password: "password")
+    login_as(@john)
   end
 
   # (scenario = capybara)
@@ -16,18 +19,17 @@ RSpec.feature "Creating Articles" do
     # visit root page
     visit "/articles"
     # click on new Article
-    click_on 'New'
+    click_link 'New'
     # fill in title
     fill_in "Title", with: "Creating a blog"
     # fill in body
-    fill_in "Body", with: "Lorem Ipsum"
+    fill_in "Text", with: "Lorem Ipsum"
     # create Article
     click_button "Create"
 
     #### expextations ###
     # Article has been created
     expect(page).to have_content("Article has been created")
-    # articles path
-    expect(page.current_path).to eq(articles_path)
+
   end
 end
