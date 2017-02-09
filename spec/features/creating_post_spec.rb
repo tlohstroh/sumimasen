@@ -17,7 +17,8 @@ RSpec.feature "Creating Articles" do
   # (scenario = capybara)
   scenario "A user creates a new article" do
     # visit root page
-    visit "/articles"
+    visit "/"
+    click_link 'MUSINGS'
     # click on new Article
     click_link 'New'
     # fill in title
@@ -30,6 +31,26 @@ RSpec.feature "Creating Articles" do
     #### expextations ###
     # Article has been created
     expect(page).to have_content("Article has been created")
+
+  end
+
+    scenario "A user fails to create a new article" do
+      # visit root page
+      visit "/"
+      click_link 'MUSINGS'
+      # click on new Article
+      click_link 'New'
+      # fill in title
+      fill_in "Title", with: ""
+      # fill in body
+      fill_in "Text", with: ""
+      # create Article
+      click_button "Create"
+
+      #### expextations ###
+      expect(page).to have_content("Article has not been created")
+      expect(page).to have_content("Title can't be blank")
+      expect(page).to have_content("Text can't be blank")
 
   end
 end
