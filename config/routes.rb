@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
+          # controllers: {registrations: "registrations"}
+          # to overwrite the registrations contoller
+  devise_for :users, controllers: {registrations: "registrations"}
   get 'welcome/index'
 
   resources :articles
