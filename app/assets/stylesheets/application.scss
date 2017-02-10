@@ -156,14 +156,22 @@ $hover-color: #F3D500; // oker
   background-color: $homepage-color;
 }
 
+.content{
+  width: 100%;
+  min-height: 100vh;
+  background-color: $primary-color;
+  padding: 80px;
+  padding-top: $navbar-height + 80px;
+}
+
 
 
 .container{
   margin: 0px;
-  padding: 80px;
+  padding: 0px;
   width: 100%;
   min-height: 100vh;
-  padding-top: $navbar-height + 80px;
-  background-color: $primary-color;
+  // padding-top: $navbar-height + 80px;
+  // background-color: $primary-color;
 
 }

@@ -10,35 +10,18 @@
 
   <body>
 
-
     <%  if params[:controller] == 'welcome'%>
       <%= render 'shared/banner_home'%>
-      <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p>
-      <div class="col-md-12">
-        <% flash.each do |key, message| %>
-        <div class="text-center alert alert-<%= key == 'notice'? 'success': 'danger' %>">
-          <%= message %>
-        </div>
-        <% end %>
-      </div>
-      <%= yield %>
-
     <% else %>
-      <%= render 'shared/navbar'%>
-      <div class="container">
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-        <div class="col-md-12">
-          <% flash.each do |key, message| %>
-          <div class="text-center alert alert-<%= key == 'notice'? 'success': 'danger' %>">
-            <%= message %>
-          </div>
-          <% end %>
-        </div>
-      <%= yield %>
-      <div>
+      <div class="fixed-bar">
+        <%= render 'shared/navbar'%>
+      </div>
     <% end %>
+
+    <div class="container">
+      <%= render 'shared/notice'%>
+      <%= yield %>
+    <div>
 
   </body>
 </html>
