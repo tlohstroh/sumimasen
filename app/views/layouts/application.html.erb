@@ -15,11 +15,12 @@
     <% else %>
       <div class="fixed-bar">
         <%= render 'shared/navbar'%>
+        <%= render 'shared/notice'%>
       </div>
     <% end %>
 
     <div class="container">
-      <%= render 'shared/notice'%>
+      <!-- <%= render 'shared/notice'%> -->
       <%= yield %>
     <div>
 

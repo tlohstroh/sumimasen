@@ -2,8 +2,194 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.banner{
+// .banner{
+//   background-color: green;
+//   width: auto;
+//   height: 500px;
+// }
+
+// * * * MAIN INTRO IMAGE * * * //
+
+.main-intro{
+  width: 100%;
+  height:99.5vh;
+  position: relative;
+  background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484861589/josjebuiten-zwartwit_n8h7fi.jpg') no-repeat center right fixed;
+  background-size: cover;
+  margin: 0 auto;
   background-color: green;
-  width: auto;
-  height: 500px;
+}
+
+
+
+// WELCOME Mozaik //
+
+article {
+  // width: 100%;
+  background-color: grey;
+  border: 1px black solid !important;
+}
+
+.row1, .row2, .row3, .row2-col1-subrow1, .row2-col1-subrow2, article {
+  display: flex;
+}
+
+.row1, .row2-col1-subrow2, .row3, {
+  height: 20vw;
+}
+
+/* width classes in percentages */
+
+.pct-20 {
+  width: 20%;
+}
+
+.pct-40 {
+  width: 40%;
+}
+
+.pct-60 {
+  width: 60%;
+}
+
+.one-third {
+   width: 33.3333333%
+}
+
+.two-third {
+   width: 66.666666%
+}
+
+
+/* Height Classes */
+
+.h-pct-20 {
+  height: 20%;
+}
+
+.h-pct-30 {
+  height: 30%;
+}
+
+.h-pct-40 {
+  height: 40%;
+}
+
+.h-pct-50 {
+  height: 50%;
+}
+
+.h-pct-60 {
+  height: 60%;
+}
+
+.h-pct-70 {
+  height: 70%;
+}
+
+.h-pct-80 {
+  height: 80%;
+}
+
+.h-pct-100 {
+  // height: 100%;
+	height: 40vw
+}
+
+
+
+// mozaik images are standard 20% of viewport.
+div img {
+   height: 20vw
+}
+
+// exeptions to image sizes
+.img-pct-40{
+	height: 40vw
+}
+
+// color classes
+
+.blue {
+  background-color: #A1D7F5;
+}
+
+.blue:hover {
+    background-color: #FA534E;
+}
+
+.red {
+  background-color: #FA534E;
+}
+
+// TODO
+
+@media screen and (max-width:720px) {
+  // .template-front-page .row-1 .blog-snippet,
+  // .template-front-page .row-1 .work-snippet {
+  //   width: 50%;
+  // }
+
+  .row1 {
+    flex-wrap: wrap;
+  }
+
+  .row1 article:nth-child(1),
+  .row1 article:nth-child(2) {
+    width: 100%;
+    height: 100vw;
+  }
+
+  .row1 article:nth-child(3),
+  .row1 article:nth-child(4) {
+    width: 50%;
+  }
+
+  // row two
+
+  .row2 {
+    flex-wrap: wrap;
+  }
+
+  .row2-col1,
+  .row2-col2 {
+    width: 100%;
+  }
+
+  .row2-col1-subrow2{
+    flex-wrap: wrap;
+  }
+
+  .xxx {
+    width: 100vw;
+  }
+
+  .img-pct-40{
+  	height: 66.65vw;
+  }
+
+  div img {
+    height: 100%;
+    width: 100%;
+  }
+
+  //
+
+  .row3 {
+    flex-wrap: wrap;
+  }
+
+  .row3 article:nth-child(1),
+  .row3 article:nth-child(2),
+  .row3 article:nth-child(3),
+  .row3 article:nth-child(4){
+    width: 50%;
+  }
+
+  .row3 article:nth-child(5){
+    width: 100%;
+  }
+
+
+
 }

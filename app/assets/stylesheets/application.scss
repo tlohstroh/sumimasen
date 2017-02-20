@@ -1,5 +1,28 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "welcome";
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, img {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 
 $navbar-height: 80px;
 // $homepage-color: #90C5A9;
@@ -131,21 +154,6 @@ $hover-color: #F3D500; // oker
   height: 100%;
   background-color: rgba(0,0,0,0.2);
 }
-
-
-
-// * * * MAIN INTRO IMAGE * * * //
-
-.main-intro{
-  width: 100%;
-  height:99.5vh;
-  position: relative;
-  background: url('http://res.cloudinary.com/ddpouudhk/image/upload/v1484861589/josjebuiten-zwartwit_n8h7fi.jpg') no-repeat center right fixed;
-  background-size: cover;
-  margin: 0 auto;
-  background-color: green;
-}
-
 
 
 // * * * CONTENT * * * //
