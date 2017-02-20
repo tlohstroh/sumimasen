@@ -38,77 +38,45 @@ article {
 }
 
 /* width classes in percentages */
-
-.pct-20 {
-  width: 20%;
+// vw
+.vw-20 {
+  width: 20vw;
 }
 
-.pct-40 {
-  width: 40%;
+.vw-40 {
+  width: 40vw;
 }
 
-.pct-60 {
-  width: 60%;
-}
-
-.one-third {
-   width: 33.3333333%
-}
-
-.two-third {
-   width: 66.666666%
+.vw-60 {
+  width: 60vw;
 }
 
 
 /* Height Classes */
-
-.h-pct-20 {
-  height: 20%;
+// vw
+.h-vw-20 {
+  height: 20vw;
 }
 
 .h-pct-30 {
   height: 30%;
 }
 
-.h-pct-40 {
-  height: 40%;
+.h-vw-40 {
+  height: 40vw;
 }
 
-.h-pct-50 {
-  height: 50%;
-}
-
-.h-pct-60 {
-  height: 60%;
-}
-
-.h-pct-70 {
-  height: 70%;
+// percent
+.h-pct-20 {
+  height: 20%;
 }
 
 .h-pct-80 {
   height: 80%;
 }
 
-.h-pct-100 {
-  // height: 100%;
-	height: 40vw
-}
-
-
-
-// mozaik images are standard 20% of viewport.
-div img {
-   height: 20vw
-}
-
-// exeptions to image sizes
-.img-pct-40{
-	height: 40vw
-}
 
 // color classes
-
 .blue {
   background-color: #A1D7F5;
 }
@@ -153,9 +121,19 @@ div img {
     width: 100%;
   }
 
+
   .row2-col1-subrow1-subcol1,
-  .row2-col1-subrow1-subcol1 article{
+  .row2-col1-subrow1-subcol1 article {
+    width: 66.65vw;
     height: 66.65vw;
+  }
+
+  .row2-col1-subrow1-subcol2 {
+    width: 33.33vw;
+  }
+  .row2-col1-subrow1-subcol2 article {
+    width:100%;
+    height: 50%;
   }
 
   .row2-col1-subrow2 article {
@@ -175,11 +153,6 @@ div img {
     height: 100vw;
   }
 
-  div img {
-    height: 100%;
-    width: 100%;
-  }
-
   // row 3
 
   .row3 article:nth-child(1),
@@ -195,6 +168,9 @@ div img {
     height: 100vw;
   }
 
-
+  div img {
+    height: 100%;
+    width: 100%;
+  }
 
 }
