@@ -21,7 +21,6 @@
 }
 
 
-
 // WELCOME Mozaik //
 
 article {
@@ -130,8 +129,9 @@ div img {
   //   width: 50%;
   // }
 
-  .row1 {
+  .row1, .row2, .row2-col1-subrow2, .row3{
     flex-wrap: wrap;
+    height: auto;
   }
 
   .row1 article:nth-child(1),
@@ -143,29 +143,36 @@ div img {
   .row1 article:nth-child(3),
   .row1 article:nth-child(4) {
     width: 50%;
+    height: 50vw;
   }
 
   // row two
-
-  .row2 {
-    flex-wrap: wrap;
-  }
 
   .row2-col1,
   .row2-col2 {
     width: 100%;
   }
 
-  .row2-col1-subrow2{
-    flex-wrap: wrap;
+  .row2-col1-subrow1-subcol1,
+  .row2-col1-subrow1-subcol1 article{
+    height: 66.65vw;
   }
 
-  .xxx {
+  .row2-col1-subrow2 article {
     width: 100vw;
+    height: 100vw;
   }
 
-  .img-pct-40{
-  	height: 66.65vw;
+  .row2-col1-subrow2 article:nth-child(2){
+    height: 50vw;
+  }
+
+  .row2-col2 article:nth-child(1){
+    height: 30vw;
+  }
+
+  .row2-col2 article:nth-child(2){
+    height: 100vw;
   }
 
   div img {
@@ -173,21 +180,19 @@ div img {
     width: 100%;
   }
 
-  //
-
-  .row3 {
-    flex-wrap: wrap;
-  }
+  // row 3
 
   .row3 article:nth-child(1),
   .row3 article:nth-child(2),
   .row3 article:nth-child(3),
   .row3 article:nth-child(4){
     width: 50%;
+    height: 50vw;
   }
 
   .row3 article:nth-child(5){
     width: 100%;
+    height: 100vw;
   }
 
 
